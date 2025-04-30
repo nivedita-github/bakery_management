@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nivedita's Bakery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Nivedita's Bakery Shop!</h1>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <section id="products-section">
+      <h2>Menu Card</h2>
+      <div id="products" class="product-grid"></div>
+    </section>
+
+    <aside class="sidebar">
+      <section id="cart-section">
+        <h2>Your Cart</h2>
+        <ul id="cart-list"></ul>
+        <p class="total">Total: ₹<span id="total">0</span></p>
+        <button id="place-order-btn" onclick="placeOrder()">Place Complete Order</button>
+      </section>
+
+      <section id="status-section">
+        <h2>Check Order Status</h2>
+        <input id="order-id-input" placeholder="Enter Order ID" />
+        <button onclick="checkStatus()">Check</button>
+        <p id="status-result"></p>
+      </section>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
